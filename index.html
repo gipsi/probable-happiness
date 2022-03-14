@@ -6,86 +6,315 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Today's Hyperlinks</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="https://unpkg.com/some-nice-basic-css/global.css" /> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
+	<!-- <link rel="stylesheet" href="https://unpkg.com/some-nice-basic-css/global.css" />  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0/css/font-awesome.min.css"> 
+
 	<style>
+ 
 	</style>
-	
+
+	<!-- a funny cat script (not working)
     <script>
-	</script>
-</head>
+	document.body.addEventListener('click', function () {
+    var myParent = document.getElementsByTagName("h1")[0]; 
+    var myImage = document.createElement("img");
+    myImage.src = 'https://thecatapi.com/api/images/get?format=src&type=gif';
+    myParent.appendChild(myImage);
+    myImage.style.marginLeft = "160px";
+});
+</script>
+    -->  
 
-<body>
-<!--
-<script src="js/script.js"></script>
+<!-- Digital clock that doesn't update.	
+    <script type="text/javascript">
+		function getDate(){
+		  var cDate=new Date();
+		  document.getElementById("Date").innerHTML = cDate.toString();
+		}
+	  </script>
+<body onLoad='getDate()' class="flow > * + *">
+
 -->
-<button class="button buttonb"><a href="wecss.html">&#9775 W3.css</a></button>
-<button class="button buttonb"><a href="midnight.html">&#9775 night </a></button>
+	</head>
+  <body class="flow > * + *">
 
-<div class="wrapper">
-<h1><i class="fa fa-globe" aria-hidden="true"></i> "Hello, World!"</h1>
-<h2>Let's hyperlink..</h2>
 
-<ul>
+	<header>
+		<form style="display: inline" title="Validation badge">
+			<!-- https://barker.codes/blog/why-i-added-a-valid-html-badge-to-my-footer/ -->
+			<div class="button buttonb buttonb:hover">
+			<a href="https://validator.w3.org/nu/#file">
+				<img style="border:0;width:88px;height:31px" src="html5-validator-badge.png" alt="HTML5 Valid" />
+			</a>
+		</div>
+		 <div class="button buttonb buttonb:hover">
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!" />
+			</a>
+		</div>
+            
+	</form>
+		
+		<h1>Web developer notes:</h1>
 
-	<br>
-		<li>
+	</header>
+
+
+     
+<div class="post">
+
+	<section title="Navigation section">
+
+		
+		
+		<h1><i class="fa fa-globe" aria-hidden="true"></i> "Hello, World!"</h1>
+		<h2>Today's hyperlinks..</h2>
+		<span id='ct7' ></span>
+	  <br>
+	<nav>
+<!--	<form style="display: inline" action="wecvcss.html" method="get" title="Alternative page">
+<button class="button buttonb buttonb:hover"> &#9775; W3.css </button>
+</form>
+<form style="display: inline" action="midnight.html" method="get" title="Alternative page">
+<button class="button buttonb"> &#9775; w3c-css </button>
+</form>
+-->
+<form style="display: inline" action="light-dark/index.html" method="get" title="Alternative page">
+	<button class="button buttonb"> &#9775; light/dark-js </button>
+	</form>
+	<form style="display: inline" action="pretty.html" method="get" title="Alternative page">
+		<button class="button buttonb"> &#9775; pretty-html </button>
+		</form>
+
+</nav>
+
+</section>
+
+<section>
+<h2>Toast-and-<a href="https://web.dev/building-a-breadcrumbs-component/">breadcrumbs</a>></h2><button class="button buttonb buttonb:hover" onclick="myFunction()">Click to show Snackbar</button>
+
+<div id="snackbar">Toast reminder to &#8595; scroll down &#8595; </div>
+<!-- Entity codes: https://www.toptal.com/designers/htmlarrows/arrows/ -->
+
+<section>
+	
+	   <a href="https://vscode.dev/">Visual Studio Code - In the browser</a>
+	   <h4>Source code editor</h4>
+	   <p>For writing in plain text.</p>
+	   <details><summary>
+		Software concept</summary>
+		Right click on a web page then select 'view source' to see it's <a href=" https://encyclopedia.thefreedictionary.com/source+code">source code</a>.
+		   </details>
+   
+</section>	
+	
+
+<section>
+		 <i class="fa fa-link"></i>
 			<a href="https://www.notion.so/gipsi/Junior-Web-Developer-Checklist-1-0-af740aa392e34741b91cdc196d17ddce">Notion - Junior Web Developer Checklist 1.0</a>
-		</li>
-		<br>
-			<li>
+			<h4>Information organiser</h4>
+			<p>Notes and more..</p>
+			<details><summary>
+				Mental images, ideas or conceptions</summary>
+				<q> [Middle English nocioun, concept, from Latin nōtiō, nōtiōn-, from nōtus, known, past participle of nōscere, to get to know; see gnō- in Indo-European roots.]</q> <br> <a href="https://www.thefreedictionary.com/notion"><i class="fa fa-link"></i>The Free Dictionary~notion</a>
+				</details>
+		
+	</section>	
+
+	<section>
+		<i class="fa fa-link"></i>
+		   <a href="https://gomakethings.com/">Go Make things</a>
+		   <h4>Vanilla JavaScript</h4>
+		   <p>Learning resources.</p>
+		   <details><summary>
+			   Project based course and daily tips</summary>
+			   <p> Be ready to meet some of the challenging complexities of modern front-end-development.</p> <br> <a href="https://www.thefreedictionary.com/complexity"><i class="fa fa-link"></i>The Free Dictionary~complexity</a>
+			   </details>
+	   
+   </section>
+		
+		<section>
+			 <i class="fa fa-link"></i>
 				<a href="https://frontendmasters.com/dashboard/">Frontend Masters - Bootcamp</a>
-			</li>
-			<br>
-				<li>
+           
+			<h4>Coding bootcamp</h4>
+				<p>Frontend development essentials.</p>
+				<details><summary>
+					html, css and JavaScript.</summary>
+					<strong>The</strong> modern <q>trivium</q>.<br> An equivalent of medieval  grammar, rhetoric and logic.  <a href="https://www.thefreedictionary.com/trivium"><br><i class="fa fa-link"></i> The Free Dictionary~trivium</a>
+					</details>
+				</section>	
+						
+			
+			<section>
+				<i class="fa fa-link"></i>
 					<a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">FreeCodeCamp - JavaScript Algorithms and Data Structures</a>
-				</li>
-				<br>
+				
+				<h4>JavaScript certification</h4>
+				<p>FreeCodeCamp.</p>
+				<details><summary>
+					Algorithms and data structures.</summary>
+					Prepare your <strong>tools</strong>.  <a href="https://www.thefreedictionary.com/hack"><br><i class="fa fa-link">The Free Dictionary~hack</i></a>
+					</details>
+				
+				</section>
+
+				<button class="button buttonb buttonb:hover" onclick="myFunction()">Show Snackbar</button>
+
+                <div id="snackbar">Toast reminder to &#8595; scroll down &#8595; </div>
+
+
+				<ul class="post">
+					<li>
+						<a href="https://eloquentjavascript.net/">Eloquent JavaScript</a>
+                   <li>
+			          <a href="https://sive.rs/learn-js">How to learn JavaScript ~ Derek Sivers</a>
+				    </li>
 					<li>
 						<a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">Digital Ocean - How To Code in JavaScript</a>
 					</li>
-					<br>
+					
 						<li>
-							<a href="https://crocoder.dev/blog/map-filter-reduce-exercises"/> CroCoder - Map, Filter, Reduce - Code Exercises</a>
+							<a href="https://crocoder.dev/blog/map-filter-reduce-exercises"> CroCoder - Map, Filter, Reduce - Code Exercises</a>
 					</li>
-					<br>
+					
 						<li>
 							<a href="https://www.educative.io/edpresso/pass-by-value-vs-pass-by-reference/">Educative - Pass by value vs. pass by reference</a>
 						</li>
-						<br>
+						
 							<li>
 								<a href="https://juanluis.hashnode.dev/rudimentos-de-js-slice-vs-splice">JS rudiments - slice() VS .splice()</a>
 							</li>
-							<br>
+							
 								<li>
 									<a href="
 										https://www.javascripttutorial.net/object/3-ways-to-copy-objects-in-javascript/#:~:text=To%20copy%20an%20object%20in%20JavaScript%2C%20you%20have,Use%20the%20JSON.stringify%20%28%29%20and%20JSON.parse%20%28%29%20methods">JavaScript Tutorial - Copy objects in JavaScript</a>
 								</li>
-								<br>
+								
 									<li>
 										<a href="
 											https://www.digitalocean.com/community/tutorials/copying-objects-in-javascript">JavaScript Tutorial - Copy objects in JavaScript - 2</a>
 									</li>
-									<br>
+									
 										<li>
 											<a href="
 												https://cube.fyi/">CUBE CSS</a>
 										</li>
-										<br>
+										
 											<li>
 												<a href="
 													https://nextjournal.com/xtdb-tutorial/start">xtdb-tutorial</a>
 											</li>
-											<br>
+											
 												<li>
 													<a href="
 														https://learneleventyfromscratch.com/">Learn Eleventy from scratch</a>
-												</ul>
-</div>
+														
+													</li>
+											
+												<li>	
+													<a href="https://docs.microsoft.com/en-us/learn/modules/build-simple-website/">Build a simple website using HTML, CSS, and JavaScript</a>
+													</li>
+													
+												<li>	
+													<a href="https://vscode.dev/">VS Code dev</a>
+														</li>
+											
+												<li>	
+												<a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/beginners/html#next-steps">MS beginners guide to dev tools</a>
+														</li>
+													
+													
+												<li>	
+												<a href="https://www.udacity.com/">Udacity JS</a>
+														</li>
+														
+															
+												<li>	
+												<a href="https://web.dev/">web.dev</a>
+														</li>
+														
+																	
+												<li>	
+												<a href="https://docs.microsoft.com/en-us/learn/modules/build-simple-website/7-summary">MS links!</a>
+														</li>
+														<li>	
+															<a href="reads.html">Reading <links></links></a>
+																	</li>
 
+													<li>	
+												<a href="https://open-ui.org/">Open UI</a></li>
+</ul>
+												</section>
+												</dl>
+<script>
+		function myFunction() {
+		 var x = document.getElementById("snackbar");
+		 x.className = "show";
+		 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+</script>
 
-
+<!--Digital clock tutorial: https://www.plus2net.com/javascript_tutorial/clock.php -->
+<script>function display_ct7() {
+	var x = new Date()
+	var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+	hours = x.getHours( ) % 12;
+	hours = hours ? hours : 12;
+	hours=hours.toString().length==1? 0+hours.toString() : hours;
+	
+	var minutes=x.getMinutes().toString()
+	minutes=minutes.length==1 ? 0+minutes : minutes;
+	
+	var seconds=x.getSeconds().toString()
+	seconds=seconds.length==1 ? 0+seconds : seconds;
+	
+	var month=(x.getMonth() +1).toString();
+	month=month.length==1 ? 0+month : month;
+	
+	var dt=x.getDate().toString();
+	dt=dt.length==1 ? 0+dt : dt;
+	
+	var x1=month + "/" + dt + "/" + x.getFullYear(); 
+	x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+	document.getElementById('ct7').innerHTML = x1;
+	display_c7();
+	 }
+	 function display_c7(){
+	var refresh=1000; // Refresh rate in milli seconds
+	mytime=setTimeout('display_ct7()',refresh)
+	}
+	display_c7()
+	</script>
 </body>
+
+<footer class="wrapper">
+	
+	<!--
+<section>
+<dl>
+	<dt><i class="icons"> <object data="icons/gitlab.svg" width="30" height="30" > </object>  GitLab</i></dt>
+	<dt><i class=""> <object data="icons/bitbucket.svg" width="30" height="30"> </object>  BitBucket</i></dt>
+	<dt><i class=""> <object data="icons/github.svg" width="30" height="30"> </object>  GitHub</i></dt>
+	<dt><i class=""> <object data="icons/codepen.svg" width="30" height="30"> </object>  CodePen</i></dt>
+	<dt><i class=""> <object data="icons/twitter.svg" width="30" height="30"> </object>  Twitter</i></dt>
+	<dt><i class=""> <object data="icons/discord.svg" width="30" height="30"> </object>  Discord</i></dt>
+	<dt><i class=""> <object data="icons/gitpod.svg" width="30" height="30"> </object>  Gitpod</i></dt>
+	<dt><i class=""> <object data="icons/devdotto.svg" width="30" height="30"> </object> Dev.to</i></dt>
+	<dt><i class=""> <object data="icons/hashnode.svg" width="30" height="30"> </object>  Hashnode</i></dt>
+	<dt><i class=""> <object data="icons/visualstudiocode.svg" width="30" height="30"> </object>  VS Code</i></dt>
+	 https://dev.to/gipsi 
+</dl>
+   
+</section>	
+-->
+	<p>Systematic semantics, <a href="https://www.researchgate.net/publication/225169300_The_Autotelic_Principle">autotelic principles</a>, <a href="https://en.wikipedia.org/wiki/Emergence">emergent properties</a>.<i class=""> </p>
+		
+		<h3> The End</h3>
+		<p><strong>Gipsi♻️2022</strong></p>
+	</footer>
 
 </html>
