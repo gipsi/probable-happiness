@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pretty Layout</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- https://www.geeksforgeeks.org/html-layout/?ref=lbp -->
+    <style>
+
+      .head1 {
+          font-size:40px;
+          color:#009900;
+          font-weight:bold;
+      }
+      .head2 {
+          font-size:17px;
+          margin-left:10px;
+          margin-bottom:15px;
+      }
+      body {
+          margin: 0 auto;
+          background-position:center;
+          background-size: contain;
+      }
+
+      .menu {
+          position: sticky;
+          top: 0;
+          background-color: #009900;
+          padding:10px 0px 10px 0px;
+          color:white;
+          margin: 0 auto;
+          overflow: hidden;
+      }
+      .menu a {
+          float: left;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 20px;
+      }
+      .menu-log {
+          right: auto;
+          float: right;
+      }
+      footer {
+          width: 100%;
+          bottom: 0px;
+          background-color: #000;
+          color: #fff;
+          position: absolute;
+          padding-top:20px;
+          padding-bottom:50px;
+          text-align:center;
+          font-size:30px;
+          font-weight:bold;
+      }
+      .body_sec {
+          margin-left:20px;
+      }
+    </style>
+    <style>
+      body {
+          text-align: center;
+      }
+      h1{
+          color: green;
+      }
+
+      .addressLink {
+          list-style: none;
+          overflow: hidden;
+          font: 16px;
+          margin: 30px;
+          padding: 0px;
+          border: 2px solid black;
+          font-style: italic;
+      }
+
+      .addressLink li {
+          float: left;
+      }
+
+      .addressLink li a {
+          background: #006600;
+          color: white;
+          text-decoration: none;
+          padding: 5px 0px 5px 65px;
+          position: relative;
+          float: left;
+      }
+
+      .addressLink li a:after {
+          content: " ";
+          border-top: 50px solid transparent;
+          border-bottom: 50px solid transparent;
+          border-left: 30px solid #006600;
+          margin-top: -50px;
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          z-index: 2;
+      }
+
+      .addressLink li a:before {
+          content: " ";
+          border-top: 50px solid transparent;
+          border-bottom: 50px solid transparent;
+          border-left: 30px solid white;
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          z-index: 1;
+      }
+
+      .addressLink li:first-child a {
+          padding-left: 10px;
+      }
+
+      .addressLink li:nth-child(2) a {
+          background: #009933;
+      }
+
+      .addressLink li:nth-child(2) a:after {
+          border-left-color: #009933;
+      }
+
+      .addressLink li:nth-child(3) a {
+          background: #33cc33;
+      }
+
+      .addressLink li:nth-child(3) a:after {
+          border-left-color: #33cc33;
+      }
+
+
+      .addressLink li:last-child a {
+          background: transparent !important;
+          color: black;
+      }
+
+      .addressLink li:last-child a:after {
+          border: 0;
+      }
+
+      .addressLink li a:hover {
+          background: #99ff99;
+      }
+
+      .addressLink li a:hover:after {
+          border-left-color: #99ff99 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="head1">HTML Main Layout</div>
+      <div class="head2">Ready for some CSS prettification</div>
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <div class="menu">
+      <a href="#home">HOME</a>
+      <a href="#news">NEWS</a>
+      <a href="#notification">NOTIFICATIONS</a>
+      <div class="menu-log">
+        <a href="#login">LOGIN</a>
+      </div>
+    </div>
+    <div>
+      <b><a
+          href="https://www.geeksforgeeks.org/how-to-create-breadcrumbs-using-html-and-css/"
+          >Creating Breadcrumbs</a
+        ></b>
+
+      <ul class="addressLink">
+        <li>
+          <a href="#">Web Technologies</a>
+        </li>
+        <li>
+          <a href="#">HTML</a>
+        </li>
+        <li>
+          <a href="#">Tags</a>
+        </li>
+        <li>
+          <a href="#">Attributes</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Body section -->
+    <div class="body_sec">
+      <section id="Content">
+        <h3>Content section</h3>
+      </section>
+    </div>
+    <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/YbAYMQC_ZaE"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+
+    <!-- Footer Section -->
+    <footer>Footer Section</footer>
+  </body>
+</html>
