@@ -8,16 +8,16 @@ nav {
 /* Light mode */
 @media (prefers-color-scheme: light) {
   :root {
-      --body-bg: #FFFFFF;
-      --body-color: #000000;
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
   }
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-      --body-bg: #000000;
-      --body-color: #FFFFFF;
+    --body-bg: #000000;
+    --body-color: #FFFFFF;
   }
 }
 
@@ -25,7 +25,7 @@ nav {
 body {
   background: var(--body-bg);
   color: var(--body-color);
-/*
+  /*
   background: #f5f5f5;
   color: #252525;
   */
@@ -57,7 +57,7 @@ h3 {
 p,
 li,
 dl {
- /* border: 5px solid red;*/
+  /* border: 5px solid red;*/
   max-width: 70ch;
   list-style: none;
 }
@@ -73,12 +73,12 @@ dt {
   font-weight: bold;
 }
 
-li + li {
- /* border: 5px solid blue;*/
+li+li {
+  /* border: 5px solid blue;*/
   margin-top: 0.7rem;
 }
 
-blockquote {	
+blockquote {
   border-left: 0.25rem solid;
   font-style: italic;
   font-size: 1.25rem;
@@ -131,11 +131,11 @@ a:hover {
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  box-shadow: 0 4px 8px 0 rgb(123,104,238);
+  box-shadow: 0 4px 8px 0 rgb(123, 104, 238);
 }
 
 /* More info: https://piccalil.li/quick-tip/flow-css-utility/ */
-.flow > * + * {
+.flow>*+* {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -152,27 +152,28 @@ a:hover {
   --flow-space: 3rem;
 }
 
-.post h1 + *,
-.post h2 + *,
-.post h3 + * {
+.post h1+*,
+.post h2+*,
+.post h3+* {
   --flow-space: 1rem;
 }
 
 /*  Experimental styles added later */
 .buttonb {
-background-color: white;
-color: black;
-border: 2px solid #555555;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 24px;
-margin: 4px 2px;
-cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
 .buttonb:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 section {
@@ -185,93 +186,134 @@ section {
   border: 1px solid #969696;
   padding: 50px;
   margin: 20px;
-  box-shadow: 0 4px 8px 0 rgb(123,104,238);
+  box-shadow: 0 4px 8px 0 rgb(123, 104, 238);
   transition: 0.3s;
   border-radius: 5px;
   background: url('geometric-leaves.png');
   background: rgba(76, 175, 80, 0.3);
 }
-  /*
+
+/*
   =========================================================================
   This subtle pattern made by Holman Galeano is downloaded from www.toptal.com/designers/subtlepatterns/ 
   If you need more, that's where to get'em.
   ========================================================================
-  */	
+  */
 
-  /*W3.schools snackbar css: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_snackbar*/ 
-  #snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-  }
-  <!--  
-         /*
+/*W3.schools snackbar css: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_snackbar*/
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+
+
+/*
          https://jigsaw.w3.org/css-validator/validator
          W3C CSS Validator results for style.css (CSS level 3 + SVG)
          Sorry! We found the following errors (1)
          -webkit-animation is a vendor extension https://jigsaw.w3.org/css-validator/validator 
          Unrecognized at-rule @-webkit-keyframes
          */
-  -->
-  #snackbar.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
 
-  @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
-    to {bottom: 30px; opacity: 1;}
+  to {
+    bottom: 30px;
+    opacity: 1;
   }
-  
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
-    to {bottom: 0; opacity: 0;}
-  }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
 
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
 
-  footer {
-    border: 3px solid red;
-    max-width: 65rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    box-shadow: 0 4px 8px 0 rgb(123,104,238);
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
   }
 
-  .btn {
-    background: #eb94d0;
-    -webkit-border-radius: 28;  -moz-border-radius: 28;  border-radius: 28px;
-text-shadow: 3px 2px 1px #9daef5;  -webkit-box-shadow: 6px 5px 24px #666666;  -moz-box-shadow: 6px 5px 24px #666666;  box-shadow: 6px 5px 24px #666666;
-font-family: Arial;  color: #fafafa;  font-size: 27px;  padding: 19px;  text-decoration: none;}
+  to {
+    bottom: 0;
+    opacity: 0;
   }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+
+footer {
+  border: 3px solid red;
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-shadow: 0 4px 8px 0 rgb(123, 104, 238);
+}
+
+.btn {
+  background: #eb94d0;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+}
+}
+
 .btn:hover {
   background: #2079b0;
   background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
   background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
   background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
-  background-image: -o-linear-gradient(top, #2079b0, #eb94d0); 
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
   background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
   text-decoration: none;
 }
