@@ -1,0 +1,55 @@
+/* Globals  light--#F7E7D4 orange--#DF8826 green--#617449 purple--#9C6BC2 dark--#253314 */
+
+:root {
+    --green: #617449;
+    --light: #F7E7D4;
+    --dark: #253314;
+	--purple: #9C6BC2;
+	--orange; #DF8826;
+  }
+  * {
+    color: var(--fontColor);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  body {
+      background: var(--bg);
+  }
+
+h1 {
+	color: var(--green);
+}
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+  }
+
+  .list {
+    list-style: square;
+  }
+  .light-theme {
+    --bg: var(--light);
+    --fontColor: var(--purple);
+    --btnBg: var(--dark);
+    --btnFontColor: var(--light);
+  }
+  
+  .dark-theme {
+    --bg: var(--dark);
+    --fontColor: var(--light);
+    --btnBg: var(--light);
+    --btnFontColor: var(--purple);
+  }
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  .btn:focus { outline-style: none; }
